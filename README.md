@@ -11,3 +11,16 @@ Este repositório demonstra a implementação de um pipeline CI/CD usando GitHub
 - **Deploy Simulado**: Simulação de deploy para produção
 
 ## 📁 Estrutura
+- .github/workflows/ci-cd-pipeline.yml # Pipeline CI/CD
+- package.json # Dependências do projeto
+- index.js # Código principal
+- test/test.js # Testes unitários
+
+## 🔧 Como Funciona
+
+1. **Push para main/master**: Dispara o pipeline completo
+2. **Pull Request**: Executa apenas build e testes
+3. **Stages**:
+   - Build & Test
+   - Code Quality Check
+   - Deploy Preview
