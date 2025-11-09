@@ -1,0 +1,14 @@
+{
+  "name": "task-ci-cd",
+  "version": "1.0.0",
+  "description": "Projeto para demonstrar CI/CD com GitHub Actions",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node index.js",
+    "build": "echo 'Build completed!'"
+  },
+  "devDependencies": {
+    "jest": "^29.0.0"
+  }
+}
