@@ -1,0 +1,35 @@
+name: 12 - Workflow Dispatch Básico
+
+on:
+  workflow_dispatch:
+    # Nenhum parâmetro configurado nesta versão básica
+
+jobs:
+  manual-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Echo informações do workflow
+        run: |
+          echo "🔄 Este workflow foi disparado manualmente!"
+          echo "👤 Disparado por: ${{ github.actor }}"
+          echo "📁 Repositório: ${{ github.repository }}"
+          echo "🌿 Branch: ${{ github.ref }}"
+          echo "📅 Execução iniciada em: $(date)"
+          
+      - name: Simular tarefa manual
+        run: |
+          echo "⚙️ Executando tarefa manual..."
+          sleep 3
+          echo "✅ Tarefa manual concluída com sucesso!"
+          
+      - name: Gerar relatório
+        run: |
+          echo "📊 RELATÓRIO DE EXECUÇÃO MANUAL"
+          echo "================================="
+          echo "Workflow: 12 - Workflow Dispatch Básico"
+          echo "Hora de início: $(date)"
+          echo "Status: ✅ CONCLUÍDO"
+          echo "Resultado: Sucesso na execução manual"
