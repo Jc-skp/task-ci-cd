@@ -24,3 +24,5 @@ Este repositório demonstra a implementação de um pipeline CI/CD usando GitHub
    - Build & Test
    - Code Quality Check
    - Deploy Preview
+  
+   - 
